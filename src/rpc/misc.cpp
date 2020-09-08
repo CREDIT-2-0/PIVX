@@ -1,7 +1,8 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2019 The TERRACREDIT developers
+// Copyright (c) 2015-2019 The PIVX developers
+// Copyright (c) 2019-2020 The TERRACREDIT developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -142,7 +143,12 @@ UniValue getinfo(const UniValue& params, bool fHelp)
         return obj;
     }
 
-    obj.push_back(Pair("moneysupply",ValueFromAmount(chainActive.Tip()->nMoneySupply)));
+    CAmount _nMoneySupply = chainActive.Tip()->nMoneySupply;
+    if (chainActive.Tip()->nHeight > Params().Zerocoin_StartHeight()) {
+        _nMoneySupply = _nMoneySupply - 14506000 * COIN;
+    }
+
+    obj.push_back(Pair("moneysupply",ValueFromAmount(_nMoneySupply)));
     UniValue zcreditObj(UniValue::VOBJ);
     for (auto denom : libzerocoin::zerocoinDenomList) {
         zcreditObj.push_back(Pair(std::to_string(denom), ValueFromAmount(chainActive.Tip()->mapZerocoinSupply.at(denom) * (denom*COIN))));

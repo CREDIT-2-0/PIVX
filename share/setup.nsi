@@ -47,7 +47,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /home/ksk/Works/2020/2020-06/2020-06-12_TerraCredit/works/Ubuntu_works/TerraCredit-1.3.0/terracredit-1.3.0.1-win-setup.exe
+OutFile /home/ksk/Works/2020/2020-06/2020-06-12_TerraCredit/works/Ubuntu_works/TerraCredit-1.3.0/terracredit-1.3.0.3-win-setup.exe
 !if "" == "64"
 InstallDir $PROGRAMFILES64\TerraCredit
 !else
@@ -57,12 +57,12 @@ CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion 1.3.0.1
+VIProductVersion 1.3.0.3
 VIAddVersionKey ProductName "TERRACREDIT Core"
-VIAddVersionKey ProductVersion "1.3.0.1"
+VIAddVersionKey ProductVersion "1.3.0.3"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
-VIAddVersionKey FileVersion "1.3.0.1"
+VIAddVersionKey FileVersion "1.3.0.3"
 VIAddVersionKey FileDescription ""
 VIAddVersionKey LegalCopyright ""
 InstallDirRegKey HKCU "${REGKEY}" Path
@@ -95,7 +95,7 @@ Section -post SEC0001
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
-    WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayVersion "1.3.0.1"
+    WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayVersion "1.3.0.3"
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" Publisher "${COMPANY}"
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" URLInfoAbout "${URL}"
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayIcon $INSTDIR\uninstall.exe

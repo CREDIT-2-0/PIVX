@@ -3697,8 +3697,12 @@ Endereço: %4
         <translation>Todos os direitos reservados (C) 2014-%i aos Desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The TERRACREDIT Core Developers</source>
-        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do TERRACREDIT Core</translation>
+        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
+        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do PIVX Core</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2019-%i The TERRACREDIT Core Developers</source>
+        <translation>Todos os direitos reservados (C) 2019-%i aos Desenvolvedores do TERRACREDIT Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

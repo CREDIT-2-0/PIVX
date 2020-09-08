@@ -8153,7 +8153,12 @@ TERRACREDIT Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The TERRACREDIT Core Developers</source>
+        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copyright (C) 2019-%i The TERRACREDIT Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

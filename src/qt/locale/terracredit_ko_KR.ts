@@ -3999,8 +3999,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Copyright (C) 2014-%i The Dash Core 개발자들</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The TERRACREDIT Core Developers</source>
-        <translation>Copyright (C) 2015-%i The TERRACREDIT Core 개발자</translation>
+        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
+        <translation>Copyright (C) 2015-%i The PIVX Core 개발자</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2019-%i The TERRACREDIT Core Developers</source>
+        <translation>Copyright (C) 2019-%i The TERRACREDIT Core 개발자</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

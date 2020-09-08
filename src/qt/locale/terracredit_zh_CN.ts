@@ -6558,8 +6558,12 @@ TERRACREDIT核心钱包</translation>
         <translation>版权所有(C) 2014-%i的达世核心开发者</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The TERRACREDIT Core Developers</source>
-        <translation>版权所有(C) 2015-%i TERRACREDIT核心开发者</translation>
+        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
+        <translation>版权所有(C) 2015-%i PIVX核心开发者</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2019-%i The TERRACREDIT Core Developers</source>
+        <translation>版权所有(C) 2019-%i TERRACREDIT核心开发者</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

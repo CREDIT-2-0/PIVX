@@ -3297,8 +3297,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Всички права запазени (c) 2014-%i Dash Core разработчици</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The TERRACREDIT Core Developers</source>
-        <translation>Всички права запазени (c) 2015-%i TERRACREDIT Core разработчици</translation>
+        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
+        <translation>Всички права запазени (c) 2015-%i PIVX Core разработчици</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2019-%i The TERRACREDIT Core Developers</source>
+        <translation>Всички права запазени (c) 2019-%i TERRACREDIT Core разработчици</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

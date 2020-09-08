@@ -1,7 +1,8 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2019 The TERRACREDIT developers
+// Copyright (c) 2015-2019 The PIVX developers
+// Copyright (c) 2019-2020 The TERRACREDIT developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -138,7 +139,12 @@ UniValue blockToJSON(const CBlock& block, const CBlockIndex* blockindex, bool tx
     result.push_back(Pair("modifier", strprintf("%016x", blockindex->nStakeModifier)));
     result.push_back(Pair("modifierV2", blockindex->nStakeModifierV2.GetHex()));
 
-    result.push_back(Pair("moneysupply",ValueFromAmount(blockindex->nMoneySupply)));
+    CAmount _nMoneySupply = blockindex->nMoneySupply;
+    if (blockindex->nHeight > Params().Zerocoin_StartHeight()) {
+        _nMoneySupply = _nMoneySupply - 14506000 * COIN;
+    }
+
+    result.push_back(Pair("moneysupply",ValueFromAmount(_nMoneySupply)));
 
     UniValue zcreditObj(UniValue::VOBJ);
     for (auto denom : libzerocoin::zerocoinDenomList) {

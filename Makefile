@@ -240,7 +240,8 @@ am__DIST_COMMON = $(srcdir)/Makefile.in \
 	$(top_srcdir)/test/util/bitcoin-util-test.py \
 	$(top_srcdir)/test/util/rpcauth-test.py COPYING INSTALL \
 	build-aux/compile build-aux/config.guess build-aux/config.sub \
-	build-aux/install-sh build-aux/ltmain.sh build-aux/missing
+	build-aux/depcomp build-aux/install-sh build-aux/ltmain.sh \
+	build-aux/missing
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 distdir = $(PACKAGE)-$(VERSION)
 top_distdir = $(distdir)
@@ -316,7 +317,7 @@ CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
 CHARTS_CFLAGS = -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/x86_64-linux-gnu/qt5
 CHARTS_LIBS = -lQt5Charts -lQt5Widgets -lQt5Gui -lQt5Core
-CLIENT_VERSION_BUILD = 1
+CLIENT_VERSION_BUILD = 3
 CLIENT_VERSION_IS_RELEASE = true
 CLIENT_VERSION_MAJOR = 1
 CLIENT_VERSION_MINOR = 3
@@ -413,10 +414,10 @@ OTOOL64 =
 PACKAGE = terracredit
 PACKAGE_BUGREPORT = https://github.com/terracredit-project/terracredit/issues
 PACKAGE_NAME = TERRACREDIT Core
-PACKAGE_STRING = TERRACREDIT Core 1.3.0.1
+PACKAGE_STRING = TERRACREDIT Core 1.3.0.3
 PACKAGE_TARNAME = terracredit
 PACKAGE_URL = https://terra-credit.com/
-PACKAGE_VERSION = 1.3.0.1
+PACKAGE_VERSION = 1.3.0.3
 PATH_SEPARATOR = :
 PIC_FLAGS = -fPIC
 PIE_FLAGS = -fPIE
@@ -500,7 +501,7 @@ USE_NUM_GMP =
 USE_NUM_OPENSSL = 
 USE_QTCHARTS = 
 USE_UPNP = 
-VERSION = 1.3.0.1
+VERSION = 1.3.0.3
 WARN_CXXFLAGS =  -Wall -Wextra -Wformat -Wvla -Wformat-security -Wredundant-decls
 WINDOWS_BITS = 
 WINDRES = 
